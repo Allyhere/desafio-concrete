@@ -16,7 +16,9 @@ export default {
       });
       fetch(`https://api.github.com/users/${profile.repo}/repos`).then(
         async res => {
-          this.repoData = await res.json();
+          const repo = await res.json();
+          repo.sort((a, b) => b.stargazers_count - a.stargazers_count);
+          this.repoData = repo;
         }
       );
       fetch(`https://api.github.com/users/${profile.repo}/starred`).then(

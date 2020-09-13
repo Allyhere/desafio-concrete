@@ -1,5 +1,8 @@
 # desafio-concrete
 
+## Description
+An app that returns your github profile informantion and your current repositories (sorted by stars).
+
 ## Project setup
 ```
 npm install
