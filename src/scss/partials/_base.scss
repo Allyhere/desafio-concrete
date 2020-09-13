@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol { list-style: none; }
+button { all: unset; }
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slide-up {
+  &-enter{
+    transform: translateX(10px);
+    opacity: 0;
+    &-active {
+      transition: all .2s ease;
+    }
+  }
+}
+
+.slide-left {
+  &-enter{
+    transform: translateX(-10px);
+    opacity: 0;
+    &-active {
+      transition: all .2s ease;
+    }
+  }
+}

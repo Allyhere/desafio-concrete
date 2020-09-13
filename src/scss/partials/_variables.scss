@@ -1,0 +1,26 @@
+@import './mixins';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200&display=swap');
+
+/*Colors*/
+$clr-theme: #ac53f2;
+$clr-main: #5c5c5c;
+$clr-background: #ffffff;
+
+/*Font*/
+$raleway: 'Raleway', sans-serif;
+$monaco: 'Monaco', monospace;
+
+$font-body: 1.2rem;
+$font-title: 2.3rem;
+$font-title-main: 4rem;
+$font-title-top: 3rem;
+
+/* Others */
+$default-shadow: 0 0 4px hsl(0,0,15);
+
+
+/* Animations */
+@include keyframes(appear-top) {
+  from{opacity: 0; transform: translateY(-10px)}
+  to{opacity: 1; transform: translateY(0px)}
+}

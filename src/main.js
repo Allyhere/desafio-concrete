@@ -2,6 +2,9 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+import SearchBar from "./components/SearchBar.vue";
+
+Vue.component("search-bar", SearchBar);
 
 Vue.config.productionTip = false;
 
